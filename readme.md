@@ -1,6 +1,6 @@
 # DAMP - Docker Apache MariaDb Php
 
-## Basic Apache+MariaDb+php development environment.
+## A basic development environment with docker.
 
 This is a docker-compose file to quickly set up a development environment with apache, mariadb and php on docker.
 
@@ -11,8 +11,9 @@ This is a docker-compose file to quickly set up a development environment with a
 
 ## Usage
 - Copy the contents of this repository to your project directory, open up a console in said directory and run: `docker-compose up`
-- The contents of the /htdocs foler will be mapped to Apache's document root and show up at localhost:8080
+- The contents of the /htdocs foler will be mapped to Apache's document root and will be served at localhost:8080
 - /mysql_data folder will map to /var/lib/mysql inside the mariadb container and hold MariaDb's data
+- /logs folder will be mapped to /var/log, where you can see apache's logs
 - You also get PhpMyAdmin running on localhost:8081
 - If you make any changes to the docker-compose or the dockerfile along the way, run `docker-compose up --build` to rebuild the container.
 
