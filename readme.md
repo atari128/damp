@@ -2,7 +2,7 @@
 
 ## A basic development environment with docker.
 
-This is a docker-compose file to quickly set up a development environment with apache, mariadb and php on docker.
+This is a basic template to set up a development environment with apache, mariadb and php on docker.
 
 > Think of Docker as a virtual machine, that runs a minimal Linux system with only the bare minimum required for your project, encapsulating all the necessary components in **containers**. You choose and set up the containers using **dockerfiles**, which contain the commands to build the container. To make life easier, docker-compose is a tool which enables you to describe the containers in a bit simpler **yaml** format. This project here is an example of how to set up a basic Apache, MariaDb, PHP development environment.
 > In order to run this development environment, you will need to have docker and docker-compose installed on your system.
